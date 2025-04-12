@@ -1,0 +1,91 @@
+{% extends 'user/base.html' %}
+  {% load static %}
+    {% block content %}
+
+    <div class="container">
+    <div class="row">
+        {% for a in x %}
+   <!-- Modal -->
+
+   <div id="outerModal{{ a.id }}" class="modal">
+    <div class="modal-content">
+      <div class="top_model">
+        <span class="close" onclick="closeOuterModal('{{ a.id }}')">&times;</span>
+        <p>{{a.name}}</p>
+      </div>
+        <div class="modal-body coin_cond">
+          <button class="bg-gradient-info" onclick="showInnerModal1('{{ a.id }}')"><a href="#">Backup</a></button>
+         <button class="bg-gradient-info" onclick="showInnerModal2('{{ a.id }}')"><a href="#">Withdraw</a></button>
+         <button class="bg-gradient-info"><a href="/buyc">Buycoin</a></button>
+      </div>
+
+      </div>
+  </div>
+
+
+
+ <!-- Inner Modal 1 -->
+ <div id="innerModal1{{ a.id }}" class="modal">
+  <div class="modal-content">
+      <span class="close" onclick="closeInnerModal1('{{ a.id }}')">&times;</span>
+      <form class="bpf" action="" method="POST" style="width: 90%;">
+        {% csrf_token %}
+        <h5>You are to Transfer {{a.name}} with the address below to complete this backup</h5>
+        <img src="{{a.logo.url}}" alt="" >
+        <h5>copy the wallet address below</h5>
+        <div class="wadd">
+           <button  data-item-id="{{ a.id }}" class="copy-btn"><span class="copy_icon bg-gradient-info">copy</span> <p  id="text_{{ a.id }}" class="copy_content"> {{a.address}}</p></button>
+        </div>
+        <input type="text" name="backup_id" value="{{a.id}}" placeholder="amount" hidden>
+    <input type="text" name="amount" id="{{a.id}}" placeholder="amount" required><br>
+    <input type="submit" class="submit bg-gradient-info" value="Deposit Now">
+    </form>
+  </div>
+</div>
+
+<!-- Inner Modal 2 -->
+<div id="innerModal2{{ a.id }}" class="modal">
+  <div class="modal-content">
+      <span class="close" onclick="closeInnerModal2('{{ a.id }}')">&times;</span>
+      <form class="bpf" action="bckwh" method="POST" style="width: 90%;">
+        {% csrf_token %}
+        <h5>Withdraw with {{a.name}} enter your receiving wallet address below</h5>
+        <img src="{{a.logo.url}}" alt="" >
+        <input type="text" name="backup_id" value="{{a.id}}" placeholder="amount" hidden>
+    <input type="text" name="address" id="{{a.id}}" placeholder=" Wallet address" required><br>
+    <input type="number" name="amount" id="{{a.id}}" placeholder=" Enter amount" min="1" required><br>
+    <input type="submit" class="submit bg-gradient-info" value="withdraw Now">
+    </form>
+  </div>
+</div>
+
+
+          <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
+            <div class="card" style="margin-bottom: 1rem;">
+              <a href="#" onclick="showOuterModal('{{ a.id }}')">
+              <div class="card-body p-3">
+                <div class="row">
+                  <div class="col-8">
+                    <div class="numbers">
+                      <p class="text-sm mb-0 text-capitalize font-weight-bold">{{a.name}}</p>
+                      <h5 class="font-weight-bolder mb-0">
+                        ${{a.amount}}
+                        <span class="text-success text-sm font-weight-bolder">+55%</span>
+                      </h5>
+                    </div>
+                  </div>
+                  <div class="col-4 text-end">
+                    <div class="d_coin icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
+                        <img src="{{a.logo.url}}" alt="kk">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+
+{% endblock %}

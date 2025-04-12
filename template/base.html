@@ -1,0 +1,343 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'custom.css' %}">
+    <title></title>
+</head>
+<body>
+
+    <!DOCTYPE html>
+    <html lang="zxx">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <head>
+        <title>{{ss.sitename}}</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=0.8">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta name="author" content="{{ss.sitename}}">
+        <link rel="stylesheet" href="{% static 'user/css/main.css' %}" type="text/css">
+        <!-- Main Stylesheet CSS -->
+        <!--Favicon icon-->
+        <link href="{% static 'user/fontawesome/css/all.css' %}" rel="stylesheet">
+        <!-- <link href="" rel="stylesheet"> -->
+            <script src="{% static 'user/fontawesome/js/all.js'}"></script>
+        <!-- <link href="unpkg.com/aos%402.3.1/dist/aos.html" rel="stylesheet"> -->
+
+        <script type="text/javascript" data-cfasync="false">
+        /*<![CDATA[/* */
+        (function(){var l=window,e="db0e5c254a443584aa2f46e26fdfc027",m=[["siteId",287*408-565+344-141+5004934],["minBid",0],["popundersPerIP","0"],["delayBetween",0],["default",false],["defaultPerDay",0],["topmostLayer","auto"]],h=["d3d3LmNkbjRhZHMuY29tL1Qva2h0Z2QveGNvbG9yLXNjaGVtZS5taW4uanM=","ZDNnNW92Zm5nanc5YncuY2xvdWRmcm9udC5uZXQvZGJhcmJhLm1pbi5qcw==","d3d3LmVwZnByaXFwcHAuY29tL0hrS05SL3AvbWNvbG9yLXNjaGVtZS5taW4uanM=","d3d3LnZsbnRhZGZ6dmR3ZnVvLmNvbS9wYmFyYmEubWluLmpz"],u=-1,x,f,d=function(){clearTimeout(f);u++;if(h[u]&&!(1748648923000<(new Date).getTime()&&1<u)){x=l.document.createElement("script");x.type="text/javascript";x.async=!0;var q=l.document.getElementsByTagName("script")[0];x.src="https://"+atob(h[u]);x.crossOrigin="anonymous";x.onerror=d;x.onload=function(){clearTimeout(f);l[e.slice(0,16)+e.slice(0,16)]||d()};f=setTimeout(d,5E3);q.parentNode.insertBefore(x,q)}};if(!l[e]){try{Object.freeze(l[e]=m)}catch(e){}d()}})();
+        /*]]>/* */
+        </script>
+
+
+    <style>
+
+
+    @media (max-width: 1450px) {
+        #yt-widget .yt-listbox {
+            width: 700px !important;
+        }
+    }
+
+    @media (max-width: 1000px) {
+        #yt-widget .yt-listbox {
+            width: 750px !important;
+            height: 100%;
+        }
+    }
+
+    @media (max-width: 750px) {
+        #yt-widget .yt-listbox {
+            width: 500px !important;
+        }
+    }
+
+    @media (max-width: 600px) {
+        #yt-widget .yt-listbox {
+            width: 100% !important;
+        }
+    }
+
+    #ytWidget {
+        position: fixed !important;
+        left: 50%;
+        transform: translate(-50%);
+        bottom: 12px !important;
+        z-index: 99999 !important;
+        text-align: center !important;
+    }
+
+    #yt-widget .yt-listbox {
+        overflow-x: scroll !important;
+        bottom: 40px !important;
+    }
+
+    #yt-servicelink {
+        display: none !important;
+    }
+    /**/
+    </style>
+    <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .columns {
+      float: left;
+      width: 25%;
+      padding: 8px;
+    }
+
+    .price {
+      list-style-type: none;
+      border: 1px solid #eee;
+      margin: 0;
+      padding: 0;
+      -webkit-transition: 0.3s;
+      transition: 0.3s;
+    }
+
+    .price:hover {
+      box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+    }
+
+    .price .header {
+      background-color: #111;
+      color: white;
+      font-size: 25px;
+    }
+
+    .price li {
+      border-bottom: 1px solid #eee;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .price .grey {
+      background-color: #eee;
+      font-size: 20px;
+    }
+
+    .button {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 10px 25px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .columns {
+        width: 100%;
+      }
+    }
+    </style>
+
+    </head>
+
+
+
+    <body data-spy="scroll" data-target=".navbar" data-offset="82">
+
+    <nav class="navbar wow fadeInDown" data-wow-delay=".2s" data-wow-duration="1s" id="myNavbar">
+        <!-- Main header start -->
+        <div class="container">
+            <!-- container-start -->
+            <div class="navbar-header ">
+                <button data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+                    <!-- mobile toggle (hamburgur) -->
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar top"></span>
+                    <span class="icon-bar mid"></span>
+                    <span class="icon-bar btm"></span>
+                </button>
+                {% if ss.logo %}
+                <a href="/" class="navbar-brand" style="text-transform: uppercase; font-size: 12pt">
+                    <span style="font-weight: 800; color: #6E7FF3;"><img src="{{ss.logo.url}}"  width='200px;'></span> <span style="font-weight: 800; color: white"></span>
+                </a>
+                {% else %}
+                <a href="/" class="navbar-brand" style="text-transform: uppercase; font-size: 12pt">
+                    <span style="font-weight: 800; color: #6E7FF3;"><img src="{% static 'user/logo.png' %}"  width='200px;'></span> <span style="font-weight: 800; color: white"></span>
+                </a>
+                {% endif %}
+            </div>
+            <div id="navbarCollapse" class="collapse navbar-collapse ">
+                <ul class="nav navbar-nav navbar-right " id="nav_bar">
+                    <li><a href="#about">About {{ss.sitename}}</a></li>
+                    <li><a href="#buy-token">Live price</a></li>
+                    <li><a href="#service">Services</a></li>
+                    <!-- <li><a href="#faq-section">Faq</a></li> -->
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>    <style>
+            .fullscreen-bg {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                overflow: hidden;
+                z-index: -100;
+            }
+            .fullscreen-bg__video {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+            @media (min-aspect-ratio: 16/9) {
+                .fullscreen-bg__video {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            @media (max-aspect-ratio: 16/9) {
+                .fullscreen-bg__video {
+                    width: auto;
+                    height: 100%;
+                }
+                .fullscreen-bg{
+                    width: 1250px;
+                }
+            }
+            #overlay {
+                position: absolute;
+                display: block;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: rgba(0,0,0,0.2);
+                z-index: -10;
+                cursor: pointer;
+            }
+        </style>
+
+
+
+
+
+    {% block content %}
+    {% endblock %}
+
+    <footer class="footer t-burger dark-template-bg">
+        <div class="container">
+            <!-- container-start -->
+            <!-- column end -->
+            <div class="row footer-links">
+                <div class="col-sm-3 col-lg-3 wow fadeInUp" data-wow-delay=".4s" data-wow-duration=".4s">
+                    <a href="#" class="">
+                        <span style="font-weight: 800; font-size: 15pt; color: #6E7FF3;">{{ss.sitename}}</span> <span style="font-weight: 800; color: white; font-size: 15pt;"></span>
+                    </a>
+                    <div style="height:313px; padding:0px; margin:0px; width: 100%;">
+                                    <img src="{% static 'user/images/ftrqfs.jpg' %}" alt="cehck" width="100%"  height="50%" class="pull-left">
+
+                                    <p class="big-pera">What does ISO 20022 mean for the payments industry?</p>
+                                </div>
+                </div>
+                <div class="col-sm-2 links wow fadeInUp" data-wow-delay=".5s" data-wow-duration=".5s">
+                    <h3>Learn more</h3>
+                    <ul class="list-unstyled mt2">
+                        <li><a href="#about" style="color: #fff;">About {{ss.sitename}}</a></li>
+                        <li><a href="#buy-token" style="color: #fff;">Live price</a></li>
+                        <li><a href="#service" style="color: #fff;">Services</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2 links wow fadeInUp" data-wow-delay=".5s" data-wow-duration=".5s">
+                    <h3>Information</h3>
+                    <ul class="list-unstyled mt2">
+                        <!-- <li><a href="#faq-section" style="color: #fff;">Faq</a></li> -->
+                        <li><a href="#contact" style="color: #fff;">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- <div class="col-sm-2 wow fadeInUp" data-wow-delay=".7s" data-wow-duration=".7s">
+                    <h3>Certificate</h3>
+                    <a href=".pdf" width="120px" style="color: #fff;">
+                        <i class="fa fa-certificate" aria-hidden="true"></i>Certificate Of Incorporation</a>
+                </div> -->
+
+            </div>
+            <div class="row">
+                <div class="text-center col-sm-12 mb1 wow fadeInUp" data-wow-delay=".8s" data-wow-duration=".5s">
+                    <!-- column start -->
+                    <br>
+                    <a href="privacy.html" style="font-size: 9pt; font-weight: 800; color: #6E7FF3;">Terms & Conditions | </a>
+                    <a href="privacy.html" style="font-size: 9pt; font-weight: 800; color: #6E7FF3;">Privacy Policy</a>
+                    <br>
+                    <p style="font-size: 9pt" class="copyright">All rights reserved <a href="#" class="template-color"><strong>{{ss.sitename}}</strong></a> Copyright &copy; 2023</p>
+                </div>
+            </div>
+            <!-- row-end -->
+        </div>
+        <!-- container-end -->
+    </footer>
+    <!-- footer-end -->
+    <script src="{% static 'user/js/jquery3.2.1.min.js' %}"></script>
+    <!-- JQUERY LIBRARY -->
+    <script src="{% static 'user/js/bootstrap.min.js' %}"></script>
+    <!-- Bootstrap JS -->
+    <script src="{% static 'user/js/main.js' %}"></script>
+    <!-- Main JS -->
+    <script src="unpkg.com/aos%402.3.1/dist/aos-2.html"></script>
+    <script>
+       $('a').click(function(){
+        var link = $(this).attr('href');
+        window.location.href = link;
+       })
+    </script>
+    <script>
+        AOS.init();
+    </script>
+    <script type="text/javascript">
+            $(document).ready(function(){
+        // get the tab from url
+        var hash = window.location.hash;
+        // if a hash is present (when you come to this page)
+        if (hash !='') {
+            // show the tab
+            $('.nav-tabs a[href="' + hash + '"]').tab('show');
+        }
+    });
+    </script>
+
+
+
+    <script>
+    function topNav() {
+        var x = document.getElementById("topNav");
+        var y = document.getElementById("loginContainer");
+        if (x.className === "topNav") {
+            x.className += " mobileNav";
+        } else {
+            x.className = "topNav";
+        }
+        if (y.className === "loginContainer") {
+            y.className += " mobileNav";
+        } else {
+            y.className = "loginContainer";
+        }
+    }
+    </script>
+
+      </body>
+    <script src="1_148_0/static/js/render.04e6690ddf71350fc4b8.js" async=""></script>
+ <script src="//code.jivosite.com/widget/ohpfBu7Fws" async></script>
+
+    </html>
+
+
+
+</body>
+</html>

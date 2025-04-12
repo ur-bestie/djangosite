@@ -1,0 +1,23 @@
+{% extends 'user/base.html' %}
+  {% load static %}
+    {% block content %}
+
+    <div class="container-fluid py-4">
+        <div class="bcoin_container">
+            {% for b in bc %}                       
+        <div class="box" style="background-color: white;">
+           <div class=" byci">
+            <img src="{{b.img.url}}" alt=""><br>
+            <h5 style="color: black;margin-top: 10px;">{{b.name}}</h5>
+            
+           </div>
+           <div class="container">
+            <a href="{{b.link}}" class="bya" style="width: 100%;">
+                <button class="bg-gradient-info" style="color: white;"> Buycoin</button></a>
+               </div>
+           </div>
+           
+        {% endfor %}
+        </div>
+
+{% endblock %}

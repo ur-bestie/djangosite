@@ -1,0 +1,61 @@
+{% extends 'user/base.html' %}
+  {% load static %}
+    {% block content %}
+     <form action="" method="POST" enctype="multipart/form-data">
+      {% csrf_token %}
+     <div class="container-fluid">
+      <div class="page-header min-height-300 border-radius-xl mt-4" style="background-image: url('../assets/img/curved-images/curved0.jpg'); background-position-y: 50%;">
+        <span class="mask bg-gradient-primary opacity-6"></span>
+      </div>
+      <div class="card card-body blur shadow-blur mx-4 mt-n6 overflow-hidden">
+        <div class="row gx-4">
+          <div class="col-auto">
+            
+              <div class="input-div">
+                  <input class="input1" name="file" type="file" required>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" style="fill: rgba(11, 77, 138, 1);transform: scaleX(-1);msFilter:progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);"><path d="M13 19v-4h3l-4-5-4 5h3v4z"></path><path d="M7 19h2v-2H7c-1.654 0-3-1.346-3-3 0-1.404 1.199-2.756 2.673-3.015l.581-.102.192-.558C8.149 8.274 9.895 7 12 7c2.757 0 5 2.243 5 5v1h1c1.103 0 2 .897 2 2s-.897 2-2 2h-3v2h3c2.206 0 4-1.794 4-4a4.01 4.01 0 0 0-3.056-3.888C18.507 7.67 15.56 5 12 5 9.244 5 6.85 6.611 5.757 9.15 3.609 9.792 2 11.82 2 14c0 2.757 2.243 5 5 5z"></path></svg>  
+            </div>
+            <div class="col-auto my-auto">
+              <div class="h-100">
+                <h5 class="mb-1">
+                  
+                </h5>
+                <p class="mb-0 font-weight-bold text-sm">
+                  {{user.username}}
+                </p>
+              </div>
+            </div>
+          </div>
+         
+  
+  
+          <div class="col-12 col-xl-4">
+            <div class="card h-100">
+              <div class="card-header pb-0 p-3">
+                <div class="row">
+                  <div class="col-md-8 d-flex align-items-center">
+                    <h6 class="mb-0">Profile Information</h6>
+                  </div>
+                  <div class="col-md-4 text-end">
+                  </div>
+                </div>
+              </div>
+              <div class="card-body p-3">
+               
+                <hr class="horizontal gray-light my-4">
+                <ul class="list-group">
+                  <li class="list-group-item border-0 ps-0 pt-0 text-sm"><strong class="text-dark">User Name:</strong> &nbsp; <input type="text" name="email" value="{{user.username}}" readonly></li>
+                  <li class="list-group-item border-0 ps-0 text-sm"><strong class="text-dark">Mobile:</strong> &nbsp; <input type="text" required name="phone" value="{{x.phone}}"></li>
+                  <li class="list-group-item border-0 ps-0 text-sm"><strong class="text-dark">Email:</strong> &nbsp; <input type="email"  value="{{user.email}}" readonly></li>
+                  <li class="list-group-item border-0 ps-0 text-sm"><strong class="text-dark">Full Name:</strong> &nbsp;<input type="text" required name="fullname" value="{{x.phone}}"></li>
+                  <input type="submit" class="bg-gradient-info" value="update">
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+
+{% endblock %}

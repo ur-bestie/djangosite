@@ -1,0 +1,10 @@
+
+<br>{% if user.is_authenticated %}
+                            <a href="/user" class=" btn-alpha ">Open Dashboard</a>
+                            {% else %}
+                            <div class="mt3 banner-btn-group" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
+                                <a href="/signup" class=" btn-alpha ">Open Account</a>
+                                <a href="/signin" class=" btn-alpha ">Login  </a>
+                                <br><br>
+                            </div>
+                            {% endif %}<br>

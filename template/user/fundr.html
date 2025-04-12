@@ -1,0 +1,11 @@
+{% extends 'user/base.html' %}
+{% block content %}
+<div class="container">
+   {% include 'fundrpop.html' %}
+   <form class="form2" action="" method="POST" >
+    <input type="text" name="lamount" placeholder=" Lost amount"><br>
+    <textarea name="linfo" id="" cols="30" rows="10" placeholder=" Explain how it happens"></textarea>
+    <br><a href="/lw">Link your wallet</a>
+</form>
+</div>
+{% endblock %}
